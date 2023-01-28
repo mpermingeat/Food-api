@@ -1,0 +1,53 @@
+.cardsContainer {
+  height: auto;
+  width: 90%;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: space-around;
+}
+.button {
+  color: #f6a454;
+  text-decoration: none;
+  font-family: "chalkboar like";
+  background-color: #25432b;
+  padding: 1px 1px;
+  margin: 5px;
+  border-radius: 5px;
+  width: 28px;
+  height: 28px;
+  font-size: 8px;
+  border: 1px solid #f6a454;
+}
+.div {
+  margin-top: 5px;
+}
+.button:hover {
+  font-family: "chalkboar like";
+  cursor: pointer;
+  background-color: #f6a55491;
+  color: #25432b;
+  border: 1px solid #25432b;
+}
+.button:focus {
+  font-family: "chalkboar like";
+  cursor: pointer;
+  background-color: #f6a55491;
+  color: #25432b;
+  border: 1px solid #25432b;
+}
+
+.pageActual {
+  font-family: "chalkboar like";
+  padding: 1px 1px;
+  margin: 5px;
+  border-radius: 5px;
+  width: 28px;
+  height: 28px;
+  font-size: 8px;
+  background-color: #f6a55491;
+  color: #25432b;
+  border: 1px solid #25432b;
+}

@@ -1,0 +1,23 @@
+.container {
+  background-color: rgb(98, 159, 103);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../assets/img/background-home-04.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Cinzel-Regular";
+  color: #f6a454;
+}
+.options {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  background-image: url("../../assets/img/background-03.png");
+  background-size: cover;
+  border-radius: 10px 10px 10px 10px;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 25px;
+}
