@@ -14,9 +14,7 @@ export const filterDiets = (diet) => {
 //-----------Agregar Recetas al global-----------------//
 export const addRecipes = (name) => {
   return async function (dispatch) {
-    const response = await axios.get(
-      `http://localhost:3001/recipes?title=${name}`
-    );
+    const response = await axios.get(`/recipes?title=${name}`);
     dispatch({ type: ADD_RECIPES, payload: response.data });
   };
 };
@@ -31,7 +29,7 @@ export const healthScore = (value) => {
 //------------agregar las recetas--------------//
 export const addDiets = () => {
   return async function (dispatch) {
-    const response = await axios.get("http://localhost:3001/diets");
+    const response = await axios.get("/diets");
     dispatch({ type: ADD_DIETS, payload: response.data });
   };
 };
@@ -45,7 +43,7 @@ export const setFilterValue = (key, value) => {
 };
 export const deleteRecipe = (id) => {
   return async function (dispatch) {
-    await axios.delete(`http://localhost:3001/recipes/${id}`);
+    await axios.delete(`/recipes/${id}`);
     return dispatch({ type: DELETE_RECIPE, payload: id });
   };
 };

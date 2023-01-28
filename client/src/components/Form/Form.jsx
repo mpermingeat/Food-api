@@ -22,7 +22,7 @@ function Form() {
     let err = Object.values(errors);
     if (!err.length) {
       axios
-        .post("http://localhost:3001/recipes", dataForm)
+        .post("/recipes", dataForm)
         .then((res) => console.log("todo bien"))
         .catch((error) => console.log(error.message));
       setDataForm({
