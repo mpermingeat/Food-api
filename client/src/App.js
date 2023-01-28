@@ -8,7 +8,7 @@ import DetailRecipe from "./pages/DetailRecipe/DetailRecipe";
 import Error404 from "./pages/Error404/Error404";
 import Home from "./pages/Home/Home";
 import Landing from "./pages/Landing/Landing";
-axios.defaults.baseURL = "http://localhost:3001";
+axios.defaults.baseURL = "https://deploy-production-5432.up.railway.app";
 
 function App() {
   const { pathname } = useLocation();
