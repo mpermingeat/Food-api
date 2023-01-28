@@ -16,7 +16,7 @@ function DetailRecipe() {
   //---------------obtenemos el detalle de la receta--------------////
   const getRecipe = async (id, dataBase) => {
     const response = await axios
-      .get(`http://localhost:3001/recipes/${id}/${dataBase}`)
+      .get(`/recipes/${id}/${dataBase}`)
       .then((res) => setRecipe(res.data));
     return response;
   };
