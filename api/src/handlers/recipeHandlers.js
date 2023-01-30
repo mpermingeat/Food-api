@@ -27,14 +27,16 @@ const getDetailHandler = async (req, res) => {
 };
 //------------Manejador para crear la receta-------------------------//
 const postRecipeHandler = async (req, res) => {
-  const { title, summary, healthScore, steps, dietsTypes } = req.body;
+  const { title, summary, healthScore, steps, dietsTypes, dishTypes } =
+    req.body;
   try {
     const newRecipe = await createRecipe(
       title,
       summary,
       healthScore,
       steps,
-      dietsTypes
+      dietsTypes,
+      dishTypes
     );
     res.status(200).json(newRecipe);
   } catch (error) {
