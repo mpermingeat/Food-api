@@ -45,7 +45,7 @@ const getListByName = async (title) => {
     ],
   });
   const getListApi = await axios.get(
-    `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&number=10&addRecipeInformation=true`
+    `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&number=20&addRecipeInformation=true`
   );
   let listApi = getListApi.data.results;
   if (listApi.length !== 0) {
